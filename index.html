@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Иван Биркин | Cybersecurity Specialist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+    <header class="hero">
+        <div class="hero-content terminal">
+            <div class="terminal-bar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            
+            </div>
+
+            <div class="terminal-body">
+              <h1>Иван Биркин</h1>
+              <h2>Специалист по кибербезопасности</h2>
+              <p class="lead">
+                Pentest • DFIR • Incident Response • OSINT. Занимаюсь тестированием на проникновение,
+                цифровой криминалистикой, анализом инцидентов и исследованием уязвимостей.
+                Работаю с веб-приложениями, сетевым трафиком, логами, дампами памяти и системами Windows / Linux.  
+</p>
+            
+
+                <div class="hero-links">
+                    <a href="#skills">Навыки</a>
+                    <a href="#projects">Проекты</a>
+                    <a href="#contact">Контакты</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-photo">
+            <img src="photo_2025-03-16_16-19-55.jpg" alt="Иван Биркин">
+        </div>
+    </header>
+
+    <main>
+        <section class="about panel">
+            <h2>Обо мне</h2>
+            <p>
+               Специалист по информационной безопасности, ориентированный на практику в pentest и DFIR. 
+               Исследую веб-уязвимости, анализирую дампы памяти и сетевые артефакты, оформляю результаты в понятные технические отчёты и рекомендации по снижению рисков.
+            </p>
+        </section>
+
+        <section class="skills panel" id="skills">
+            <h2>Навыки и стек</h2>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <h3>Pentest</h3>
+                    <p>Nmap, OWASP ZAP, Hydra, Nikto, Metasploit.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Web Security</h3>
+                    <p>OWASP Top 10, SQLi, XSS, CSRF, Path Traversal, авторизация и сессии.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>DFIR</h3>
+                    <p>Volatility, RegRipper, FTK Imager, Autopsy, OSForensics.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Network Analysis</h3>
+                    <p>Wireshark, Suricata, анализ трафика, PCAP и сетевых артефактов.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Malware Analysis</h3>
+                    <p>Анализ поведения, инъекций в процессы, fileless-активности и C2-связи.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>OSINT</h3>
+                    <p>theHarvester, recon-ng, Shodan, Google Dorks, поиск и верификация данных.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Scripting</h3>
+                    <p>Python, Bash, PowerShell для автоматизации и анализа.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Reporting</h3>
+                    <p>Технические отчёты, MITRE ATT&CK, risk summary и рекомендации.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="projects panel" id="projects">
+            <h2>Проекты</h2>
+
+            <article class="project">
+                <h3>ATutor LMS: SQLi → RCE</h3>
+                <p>
+                   Провёл пентест веб-приложения ATutor LMS, подтвердил SQL-инъекцию, обошёл аутентификацию
+                   и получил удалённое выполнение кода через цепочку эксплуатации. 
+                   Использовал OWASP ZAP, Metasploit, оформил отчёт с рекомендациями по устранению уязвимости.
+                </p>
+            </article>
+
+            <article class="project">
+                <h3>OSINT по инфраструктуре Ozon</h3>
+                <p>
+                  Выполнил OSINT-разведку по публичным источникам: выявил инфраструктурные сведения,
+                  связанные с доменами, поддоменами, почтовыми и сетевыми сервисами. Использовал
+                  theHarvester, recon-ng, Shodan и Google Dorks для составления карты внешнего периметра.
+                </p>
+            </article>
+
+            <article class="project">
+                <h3>Track Forensics: расследование инцидента</h3>
+                <p>
+                    Исследовал дамп памяти Windows-системы в Volatility 2.6, обнаружил fileless PowerShell,
+                    инъекции в процессы, SSH/RDP-доступ и активный C2-канал. Подготовил отчёт по MITRE ATT&CK
+                    с выводами и мерами реагирования.
+                </p>
+            </article>
+        </section>
+
+        <section class="contact panel" id="contact">
+            <h2>Контакты</h2>
+            <ul>
+                <li><span>Email:</span> <a href="mailto:ivbirkin@yandex.ru">ivbirkin@yandex.ru</a></li>
+                <li><span>Telegram:</span> <a href="https://t.me/Ghost_INb8">@Ghost_INb8</a></li>
+                <li><span>MAX:</span> <a href="https://web.max.ru/-72420536787578">https://web.max.ru/-72420536787578</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Иван Биркин, 2026 </p>
+    </footer>
+</body>
+</html>
