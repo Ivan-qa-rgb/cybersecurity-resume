@@ -20,6 +20,7 @@
             <div class="terminal-body">
                 <h1>Иван Биркин</h1>
                 <h2>Security Engineer / SOC Analyst / DFIR Specialist</h2>
+
                 <p class="lead">
                     Pentest • DFIR • Incident Response • OSINT. Работаю на стыке защиты и расследования:
                     проектирую и настраиваю средства защиты, мониторю инциденты и провожу цифровую криминалистику
@@ -43,54 +44,70 @@
     <main>
         <section class="about panel">
             <h2>Обо мне</h2>
+
             <p>
-                Инженер по информационной безопасности с гибридным бэкграундом: QA → системное администрирование → Security Engineer.
-                Работаю на стороне Blue Team: настраиваю средства защиты, мониторю инциденты и разбираю их по артефактам.
+                Инженер по информационной безопасности с гибридным бэкграундом:
+                QA → системное администрирование → Security Engineer.
+                Работаю на стороне Blue Team: настраиваю средства защиты,
+                мониторю инциденты и разбираю их по артефактам.
             </p>
+
             <p>
-                В роли SOC‑аналитика занимаюсь анализом событий безопасности, корреляцией логов, реакцией на алерты SIEM/EDR
-                и построением таймлайнов атак. В роли DFIR‑специалиста провожу анализ памяти, реестра, диска, журналов событий
-                и PCAP, использую MITRE ATT&CK для картирования действий атакующих и подготовки отчётов.
+                В роли SOC‑аналитика занимаюсь анализом событий безопасности, корреляцией логов,
+                реакцией на алерты SIEM/EDR и построением таймлайнов атак.
+                В роли DFIR‑специалиста провожу анализ памяти, реестра, диска,
+                журналов событий и PCAP, использую MITRE ATT&CK для картирования действий
+                атакующих и подготовки отчётов.
             </p>
+
             <p>
-                Пишу YARA‑правила и поведенческие детекты для EDR, автоматизирую рутину на Python и PowerShell
-                (сбор артефактов, парсинг логов, построение таймлайнов). Ориентируюсь на команды SOC / DFIR / Security Engineering.
+                Пишу YARA‑правила и поведенческие детекты для EDR, автоматизирую рутину
+                на Python и PowerShell: сбор артефактов, парсинг логов и построение таймлайнов.
+                Ориентируюсь на команды SOC / DFIR / Security Engineering.
             </p>
         </section>
 
         <section class="skills panel" id="skills">
             <h2>Навыки и стек</h2>
+
             <div class="skills-grid">
                 <article class="skill-card">
                     <h3>Pentest</h3>
                     <p>Nmap, OWASP ZAP, Hydra, Nikto, Metasploit; эксплуатация веб‑уязвимостей и подготовка отчётов по рискам.</p>
                 </article>
+
                 <article class="skill-card">
                     <h3>Web Security</h3>
                     <p>OWASP Top 10, SQLi, XSS, CSRF, Path Traversal, управление аутентификацией, авторизацией и сессиями.</p>
                 </article>
+
                 <article class="skill-card">
                     <h3>DFIR</h3>
                     <p>Volatility, RegRipper, FTK Imager, Autopsy, OSForensics; анализ памяти, реестра, диска и артефактов Windows.</p>
                 </article>
+
                 <article class="skill-card">
-                    <h3>Network & SOC</h3>
+                    <h3>Network &amp; SOC</h3>
                     <p>Wireshark, Suricata, анализ PCAP, базовая корреляция событий SIEM, работа с EDR‑алертами.</p>
                 </article>
+
                 <article class="skill-card">
-                    <h3>Malware & Shellcode</h3>
+                    <h3>Malware &amp; Shellcode</h3>
                     <p>Анализ поведения процессов, инъекций, fileless‑активности и C2‑связей; ручной разбор x86‑инструкций в RWX‑регионах памяти.</p>
                 </article>
+
                 <article class="skill-card">
                     <h3>OSINT</h3>
                     <p>theHarvester, recon-ng, Shodan, Google Dorks для разведки внешнего периметра и верификации инфраструктурных данных.</p>
                 </article>
+
                 <article class="skill-card">
-                    <h3>Scripting & Automation</h3>
+                    <h3>Scripting &amp; Automation</h3>
                     <p>Python, Bash, PowerShell для автоматизации SOC/DFIR‑воркфлоу: сбор артефактов, парсинг логов, построение таймлайнов.</p>
                 </article>
+
                 <article class="skill-card">
-                    <h3>Reporting & ATT&CK</h3>
+                    <h3>Reporting &amp; ATT&amp;CK</h3>
                     <p>Технические отчёты, MITRE ATT&CK‑картирование, risk summary и рекомендации по реагированию и улучшению покрытия.</p>
                 </article>
             </div>
@@ -99,50 +116,56 @@
         <section class="projects panel" id="projects">
             <h2>Проекты</h2>
 
-            <section class="projects panel" id="projects">
-    <h2>Проекты</h2>
-
-    <article class="project">
-        <h3>SOC Operations Framework — учебный кейс полного цикла SOC</h3>
-        <p>
-            Разработал синтетический incident-response кейс для практики L1 → L2 → IR:
-            корреляция EDR, IdP, proxy и DNS; triage, построение timeline,
-            containment, eradication, recovery, PIR и улучшение детектов.
-        </p>
-        <p>
-            Включает JSONL-телеметрию, локальный Python query runner для поиска
-            и pivot-анализа событий, Sigma-детекты для LSASS access и hidden encoded
-            PowerShell, а также шаблоны triage, investigation и IR-документации.
-        </p>
-        <p>
-            <strong>Стек:</strong> SOC, DFIR, Incident Response, SIEM, EDR, IdP,
-            Proxy, DNS, MITRE ATT&amp;CK, Sigma, Python, JSONL.
-        </p>
-        <p>
-            Проект опубликован на GitHub:
-            <a
-                href="https://github.com/Ivan-qa-rgb/soc-operations-framework"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                soc-operations-framework
-            </a>.
-        </p>
-    </article>
-
-    <article class="project">
-        <h3>DFIR‑кейс: инжектированный шеллкод в powershell.exe</h3>
-            
             <article class="project">
-                <h3>DFIR‑кейс: инжектированный шеллкод в powershell.exe</h3>
+                <h3>SOC Operations Framework — учебный кейс полного цикла SOC</h3>
+
                 <p>
-                    Как DFIR‑специалист исследовал RWX‑области памяти процесса <code>powershell.exe</code>, выявил инжектированный шеллкод,
-                    декодер полезной нагрузки и нетипичные инструкции (push ds/es, in/out, retf). Оформил технический отчёт
-                    с MITRE‑картированием, артефактами и рекомендациями по реагированию.
+                    Разработал синтетический incident-response кейс для практики L1 → L2 → IR:
+                    корреляция EDR, IdP, proxy и DNS; triage, построение timeline,
+                    containment, eradication, recovery, PIR и улучшение детектов.
                 </p>
+
+                <p>
+                    Включает JSONL‑телеметрию, локальный Python query runner для поиска
+                    и pivot‑анализа событий, Sigma‑детекты для LSASS access и hidden encoded
+                    PowerShell, а также шаблоны triage, investigation и IR‑документации.
+                </p>
+
+                <p>
+                    <strong>Стек:</strong> SOC, DFIR, Incident Response, SIEM, EDR, IdP,
+                    Proxy, DNS, MITRE ATT&amp;CK, Sigma, Python, JSONL.
+                </p>
+
                 <p>
                     Проект опубликован на GitHub:
-                    <a href="https://github.com/Ivan-qa-rgb/powershell-shellcode-case" target="_blank">
+                    <a
+                        href="https://github.com/Ivan-qa-rgb/soc-operations-framework"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        soc-operations-framework
+                    </a>.
+                </p>
+            </article>
+
+            <article class="project">
+                <h3>DFIR‑кейс: инжектированный шеллкод в powershell.exe</h3>
+
+                <p>
+                    Как DFIR‑специалист исследовал RWX‑области памяти процесса
+                    <code>powershell.exe</code>, выявил инжектированный шеллкод,
+                    декодер полезной нагрузки и нетипичные инструкции
+                    (push ds/es, in/out, retf). Оформил технический отчёт
+                    с MITRE‑картированием, артефактами и рекомендациями по реагированию.
+                </p>
+
+                <p>
+                    Проект опубликован на GitHub:
+                    <a
+                        href="https://github.com/Ivan-qa-rgb/powershell-shellcode-case"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         powershell-shellcode-case
                     </a>.
                 </p>
@@ -150,16 +173,28 @@
 
             <article class="project">
                 <h3>Track Forensics: расследование инцидента компании «Х»</h3>
+
                 <p>
                     В роли SOC/DFIR‑аналитика провёл расследование инцидента на рабочей станции компании «Х»:
-                    анализ дампа оперативной памяти, побитовой копии диска, Amcache.hve, LNK‑файлов, журналов событий Windows
-                    и сетевых артефактов. Восстановил цепочку атаки (Refund_form.lnk → Updater.bat → скрытый PowerShell -enc
-                    → закрепление через UserInitMprLogonScript → C2‑канал), сопоставил действия с MITRE ATT&CK,
-                    подготовил рекомендации по ликвидации последствий и восстановлению системы.
+                    анализ дампа оперативной памяти, побитовой копии диска, Amcache.hve, LNK‑файлов,
+                    журналов событий Windows и сетевых артефактов.
                 </p>
+
+                <p>
+                    Восстановил цепочку атаки:
+                    Refund_form.lnk → Updater.bat → скрытый PowerShell -enc →
+                    закрепление через UserInitMprLogonScript → C2‑канал.
+                    Сопоставил действия с MITRE ATT&CK и подготовил рекомендации
+                    по ликвидации последствий и восстановлению системы.
+                </p>
+
                 <p>
                     Проект оформлен как форензик‑отчёт и опубликован на GitHub:
-                    <a href="https://github.com/Ivan-qa-rgb/track-forensics-incident" target="_blank">
+                    <a
+                        href="https://github.com/Ivan-qa-rgb/track-forensics-incident"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         track-forensics-incident
                     </a>.
                 </p>
@@ -167,22 +202,35 @@
 
             <article class="project">
                 <h3>DFIR / Blue Team кейс: компрометация AD‑учётной записи и WMI lateral movement</h3>
+
                 <p>
                     В роли DFIR / Blue Team‑инженера расследовал инцидент в домене Active Directory:
-                    компрометация пользовательской учётной записи, множественные события 4625 → успешный вход 4624
-                    с редкой рабочей станции, запуск обфусцированного <code>powershell.exe</code> на контроллере домена
-                    и lateral movement через WMI.
+                    компрометация пользовательской учётной записи, множественные события 4625 →
+                    успешный вход 4624 с редкой рабочей станции, запуск обфусцированного
+                    <code>powershell.exe</code> на контроллере домена и lateral movement через WMI.
                 </p>
+
                 <p>
-                    Собрал и проанализировал образ диска (FTK Imager), дамп памяти (WinPMEM/DumpIt, Volatility),
-                    журналы событий (KAPE/Velociraptor), реестр (RegRipper) и сетевые артефакты (PCAP, <code>netscan</code>).
-                    Построил таймлайн инцидента, выявил механизм первичного доступа, закрепления и перемещения по сети.
+                    Собрал и проанализировал образ диска (FTK Imager), дамп памяти
+                    (WinPMEM/DumpIt, Volatility), журналы событий (KAPE/Velociraptor),
+                    реестр (RegRipper) и сетевые артефакты (PCAP, <code>netscan</code>).
+                    Построил таймлайн инцидента, выявил механизм первичного доступа,
+                    закрепления и перемещения по сети.
                 </p>
+
                 <p>
-                    Оформил результат как форензик‑отчёт, DFIR‑чек‑лист для оперативной команды и playbook для SIEM/EDR
-                    (корреляция 4625→4624→PowerShell/WMI, автоматические и ручные шаги реагирования,
-                    инженерные изменения GPO/IAM/сегментации). Проект опубликован на GitHub:
-                    <a href="https://github.com/Ivan-qa-rgb/incident-reports-ad-wmi-lateral-movement.md" target="_blank">
+                    Оформил результат как форензик‑отчёт, DFIR‑чек‑лист для оперативной команды
+                    и playbook для SIEM/EDR: корреляция 4625 → 4624 → PowerShell/WMI,
+                    шаги реагирования и инженерные изменения GPO/IAM/сегментации.
+                </p>
+
+                <p>
+                    Проект опубликован на GitHub:
+                    <a
+                        href="https://github.com/Ivan-qa-rgb/incident-reports-ad-wmi-lateral-movement.md"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         incident-reports-ad-wmi-lateral-movement
                     </a>.
                 </p>
@@ -190,43 +238,58 @@
 
             <article class="project">
                 <h3>Digital Forensics Notes (Windows DFIR)</h3>
+
                 <p>
-                    Личное портфолио по цифровой криминалистике: конспекты, лабораторные работы и справочные материалы
-                    по памяти, реестру, диску, журналам событий, PCAP, cheatsheets и рабочим заметкам.
-                    Структурирует типовые DFIR‑воркфлоу и сценарии расследования инцидентов.
+                    Личное портфолио по цифровой криминалистике: конспекты, лабораторные работы
+                    и справочные материалы по памяти, реестру, диску, журналам событий, PCAP,
+                    cheatsheets и рабочим заметкам. Структурирует типовые DFIR‑воркфлоу
+                    и сценарии расследования инцидентов.
                 </p>
             </article>
 
             <article class="project">
                 <h3>ATutor LMS: SQLi → RCE</h3>
+
                 <p>
-                    В роли Security Engineer / Pentester провёл тестирование веб‑приложения ATutor LMS: подтвердил SQL‑инъекцию,
-                    обошёл аутентификацию и получил удалённое выполнение кода через цепочку эксплуатации.
-                    Использовал OWASP ZAP и Metasploit, подготовил отчёт с техническими деталями и рекомендациями по исправлению.
-                    Разбор кейса и технический отчёт сейчас оформлены как материал на платформе MAX.
-                    При необходимости могу предоставить доступ или перенести кейс в отдельный GitHub‑репозиторий.
+                    В роли Security Engineer / Pentester провёл тестирование веб‑приложения ATutor LMS:
+                    подтвердил SQL‑инъекцию, обошёл аутентификацию и получил удалённое выполнение кода
+                    через цепочку эксплуатации. Использовал OWASP ZAP и Metasploit,
+                    подготовил отчёт с техническими деталями и рекомендациями по исправлению.
+                </p>
+
+                <p>
+                    Разбор кейса и технический отчёт оформлены как материал на платформе MAX.
+                    При необходимости могу предоставить доступ или перенести кейс
+                    в отдельный GitHub‑репозиторий.
                 </p>
             </article>
 
             <article class="project">
                 <h3>OSINT по инфраструктуре Ozon</h3>
+
                 <p>
                     Как OSINT‑аналитик выполнил разведку по публичным источникам и собрал карту внешнего периметра:
-                    домены, поддомены, почтовые и сетевые сервисы. Использовал theHarvester, recon-ng, Shodan и Google Dorks
-                    для выявления и верификации инфраструктурных сведений.
-                    Разбор кейса и отчёт по результатам OSINT‑разведки оформлены как материал на платформе MAX.
-                    При необходимости могу предоставить доступ к разбору или перенести кейс в отдельный GitHub‑репозиторий.
+                    домены, поддомены, почтовые и сетевые сервисы. Использовал theHarvester,
+                    recon-ng, Shodan и Google Dorks для выявления и верификации
+                    инфраструктурных сведений.
+                </p>
+
+                <p>
+                    Разбор кейса и отчёт по результатам OSINT‑разведки оформлены как материал
+                    на платформе MAX. При необходимости могу предоставить доступ к разбору
+                    или перенести кейс в отдельный GitHub‑репозиторий.
                 </p>
             </article>
         </section>
 
         <section class="contact panel" id="contact">
             <h2>Контакты</h2>
+
             <ul>
                 <li><span>Email:</span> <a href="mailto:ivbirkin@yandex.ru">ivbirkin@yandex.ru</a></li>
-                <li><span>Telegram:</span> <a href="https://t.me/Ghost_INb8">@Ghost_INb8</a></li>
-                <li><span>MAX:</span> <a href="https://web.max.ru/-72420536787578">https://web.max.ru/-72420536787578</a></li>
-                <li><span>GitHub:</span> <a href="https://github.com/Ivan-qa-rgb">github.com/Ivan-qa-rgb</a></li>
+                <li><span>Telegram:</span> <a href="https://t.me/Ghost_INb8" target="_blank" rel="noopener noreferrer">@Ghost_INb8</a></li>
+                <li><span>MAX:</span> <a href="https://web.max.ru/-72420536787578" target="_blank" rel="noopener noreferrer">https://web.max.ru/-72420536787578</a></li>
+                <li><span>GitHub:</span> <a href="https://github.com/Ivan-qa-rgb" target="_blank" rel="noopener noreferrer">github.com/Ivan-qa-rgb</a></li>
             </ul>
         </section>
     </main>
@@ -236,15 +299,16 @@
     </footer>
 
     <script>
-    document.querySelectorAll('.skill-card, .project').forEach(card => {
-      card.addEventListener('mousemove', e => {
-        const rect = card.getBoundingClientRect();
-        const x = ((e.clientX - rect.left) / rect.width) * 100;
-        const y = ((e.clientY - rect.top) / rect.height) * 100;
-        card.style.setProperty('--x', x + '%');
-        card.style.setProperty('--y', y + '%');
-      });
-    });
+        document.querySelectorAll(".skill-card, .project").forEach(card => {
+            card.addEventListener("mousemove", event => {
+                const rect = card.getBoundingClientRect();
+                const x = ((event.clientX - rect.left) / rect.width) * 100;
+                const y = ((event.clientY - rect.top) / rect.height) * 100;
+
+                card.style.setProperty("--x", x + "%");
+                card.style.setProperty("--y", y + "%");
+            });
+        });
     </script>
 </body>
 </html>
